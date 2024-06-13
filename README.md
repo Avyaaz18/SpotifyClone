@@ -4,7 +4,6 @@
 
 A simple HTML and CSS clone of the Spotify user interface. This project replicates the look and feel of Spotify's web app, showcasing front-end design skills.
 
-![Spotify UI Clone](Spotify.png)
 
 ## Overview ℹ️
 
