@@ -1,0 +1,592 @@
+*{
+   margin:0%;
+   padding:0%;
+   box-sizing:border-box;
+   font-family: "Montserrat", sans-serif;
+   overflow: hidden;
+   color: white;
+}
+
+html,body{
+   height: 100%;
+   width: 100%;
+}
+
+.main{
+    display: flex;
+    height:100vh;
+    background-color: black;
+}
+
+.side-panel{
+    position: sticky;
+    width:296px;
+    height:100vh;
+}
+
+.upper{
+    height:112px;
+    background-color: #121212;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.8rem;
+    margin: 0.5rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.home{
+    margin:0px 10px;
+    /* margin-top: 0.25rem; */
+    padding: 0.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    opacity: 0.7;
+    cursor: pointer;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: baseline;
+}
+
+a{
+    text-decoration: none;
+}
+
+.home:hover{
+    opacity: 1;
+}
+.home a{
+    margin-left: 1rem;
+}
+.home i{
+    /* margin-right: 1rem; */
+    font-size: 1.2rem;
+}
+
+
+.down{
+    background-color: #121212;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.8rem;
+    margin: 0.5rem ;
+    /* height: 100%; */
+    height:auto;
+}
+
+.library{
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600; 
+}
+
+.lib{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lib-opns i{
+    opacity: 0.7;
+    padding:0.5rem;
+}
+
+.lib img{
+    height: 1.25rem;
+    width: 1.25rem ;
+}
+
+.box{
+    height: 140px;
+    background-color: #232323;
+    border-radius: 0.8rem;
+    /* margin: 4px 0px; */
+    margin-bottom: 4px;
+    padding: 1rem 1.25rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 1.2rem;
+}
+.box2{
+    margin-top: 1.6rem;
+    height: 160px;
+}
+.topic{
+    /* font-weight: 600; */
+    font-size: 1.05rem;
+}
+.info{
+    margin-bottom:0.2rem;
+    /* padding-top: 0.8rem; */
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.badge{
+    color: black;
+    padding: 0.25rem 1rem;
+    border-radius: 1rem;
+    width: 140px;
+    border: 1.8px solid white;
+    font-weight: 700;
+    height:2rem;
+}
+
+.box2 .badge{
+    width:155px;
+
+}
+
+.dark{
+    width:125px;
+    background-color: #0000008A;
+    color: white;
+    border-radius: 1rem;
+    border: 1.8px solid #0000008A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    height:2rem;
+}
+
+.dark i{
+    margin-right: 0.2rem;
+}
+
+/* .backdrop{
+    flex: 1;
+    height:100%;
+    background-color: black;
+    border-radius: 0.8rem; 
+    margin: 0.5rem 0rem ;
+    margin-right: 0.5rem;
+    overflow: auto;
+} */
+
+.content-panel{
+    flex: 1;
+    height:auto;
+    background-color:  #232323;
+    border-radius: 0.8rem;
+    margin: 0.5rem 0rem ; 
+    margin-right: 0.5rem;
+     overflow: auto;
+}
+.navbar{
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #232323
+    
+}
+.items{
+    background-color: #232323;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons{
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:4rem;
+}
+
+.buttons .badge{
+    width:155px;
+} 
+
+.bell{
+    background-color: black;
+    border: 1.8px solid #0000008A;
+    height:2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.dark i{
+    width: 1rem;
+    height: 1rem;
+    padding-top:0.1rem;
+}
+
+.bell i{
+     width: 1rem;
+     height: 1rem;
+     padding-top:0.15rem;
+}
+
+.A{
+    display: block;
+    height:2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: blue;
+    border: 4px solid black;
+
+}
+.nav-b {
+    margin-left: 0.6rem;
+}
+.dir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav1{
+    height:2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color:#000000b3 ;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.7rem;
+}
+.nav1 img{
+    height: 1.1rem;
+    width: 1.1rem;
+}
+
+.tags{
+    height: 56px;
+    background-color:#232323;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    padding: 1rem;
+    background-color: #232323;
+    border-radius: 1rem;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.badge1 {
+    color: white;
+    background-color: #ffffff12;
+    padding: 0.3rem 0.6rem;
+    border-radius: 1.2rem;
+    width: auto;
+    border: transparent #ffffff12;
+    /* height: 1.8rem; */
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="radio"]:checked + .badge1 {
+    background-color: white;
+    color:  #232323;
+}
+
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.cards{
+    padding: 0.9rem;
+    background-color: #232323;;
+}
+.cards .Heading{
+    line-height: 1.4rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 1rem 0rem;
+}
+
+.container1{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.card{
+    width: 12rem;
+    background-color: #232323;
+    border-radius: 0.5rem;
+    padding:0.8rem;
+    cursor: pointer;
+    position: relative;
+    margin:0.1rem;
+}
+
+.card:hover{
+    background-color: #1a1a1acd;
+    transition: background-color 0.4s;
+}
+
+/* .card .pic{
+    width:100%;
+    height: 12rem;
+    background-image: url(./stock/card7.jpeg);
+    background-size:cover;
+    border-radius: 0.4rem;
+    position: relative;
+    margin-bottom:0.6rem;
+} */
+
+.card .play-button {
+    width: 3rem;
+    height: 3rem;
+    /* position: relative; */
+    /* bottom: 70px;
+    left: 110px; */
+    position:absolute;
+    bottom: 6.25em;
+    right: 0.95rem;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: #1DB954;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    padding-left: 8px;
+    border-radius: 50%;
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.4s; /* Smooth transition effect */
+}
+
+.card:hover .play-button {
+    opacity: 1; /* Visible on hover */
+}
+
+.card i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.card .title{
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom:0.3rem;
+}
+
+.card .info{
+    font-size: 0.8rem;
+    color: #b3b3b3;
+}
+
+.card .pic img{
+    width:100%;
+    height: 12rem;
+    /* background-image: url(./stock/card7.jpeg);
+    background-size:cover; */
+    border-radius: 0.4rem;
+    position: relative;
+    /* margin-bottom:0.6rem; */
+}
+
+.music-player{
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+.logo{
+    display: flex;
+}
+.logo.icon{
+    width:16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.names{
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: center;
+       margin: 0.25rem;
+}
+.names .artist{
+    /* margin: 0.25rem; */
+    padding: 0.2rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #a7a7a7;
+}
+
+.names .song{
+    /* margin: 0.25rem; */
+    padding: 0.2rem;
+    /* margin-right: 2rem; */
+    /* font-size: 0.85rem; */
+    font-weight: 600;
+}
+
+.logo .icon{
+    width:1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid #a7a7a7;
+    margin:0.5rem;
+    margin-top: 1.4rem;
+
+}
+
+.logo .icon i{
+    width:0.45rem;
+    height: 0.45rem;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 0.6rem; 
+    /* padding-right: 0.1rem; */
+    /* opacity: 0.6; */
+    /* padding-bottom: 0.2rem; */
+    margin: 0.15rem;
+}
+
+.logo .icon:hover {
+    border-color: #888; 
+}
+
+.logo .icon i:hover {
+    color: #888; 
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:50%;
+    margin-left: 6.5rem;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+.playbackbar {
+    height: 1rem;
+    width: 60%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.current-time, .total-time{
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-left:0.2rem;
+    margin-right:0.2rem;
+}
+
+.playbackbar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.21rem;
+    background: #404040;
+}
+
+.playbackbar::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: #1DB954;
+    border-radius: 50%;
+    margin-top: -5.8px;
+}
+
+.volume {
+    height: 1rem;
+    width: 25%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 0.8rem;
+}
+
+.volume::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.21rem;
+    background: #404040;
+}
+
+.volume::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.6rem;
+    width: 0.6rem;
+    background-color: #1DB954;
+    border-radius: 50%;
+    margin-top: -3.8px;
+}
+
+
+
+.ctrls{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+
+.ctrls img{
+    width:1rem;
+    height: 1rem;
+    margin: 0.2rem;
+    margin-left: 1rem;
+    opacity: 0.7;
+}
+
+.ctrls .play{
+    opacity: 1;
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+.ctrls img:hover{
+    opacity: 1;
+}
+
+.controls{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin:0.8rem;
+}
+
+.controls .pic3{
+    opacity: 0.7;
+    width: 1.3rem;
+}
+
+.controls img{
+    width:1.5rem;
+    height: auto;
+    margin-right:0.6rem;
+}
+
+.controls .pic4{
+        opacity: 0.7;
+        width: 1.1rem;
+}
+
+

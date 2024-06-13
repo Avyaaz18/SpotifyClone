@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="all.css"/>
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="./stock/logo.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+</head>
+<body>
+    <div class="main">
+        <div class="side-panel">
+            <div class="upper">
+                <div class="home" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a>Home</a>
+                </div>
+                <div class="home search-item">
+                    <i class="fa-solid fa-magnifying-glass " class = "icon1"></i>
+                    <a class = "icon1"> Search </a>
+                </div>
+            </div>
+            <div class="down">
+                <div class="library ">
+                    <div class="lib home">
+                        <img src="./stock/library_icon.png">
+                        <a>Your Library</a>
+                    </div>
+                    <div class="lib-opns" >
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="box">
+                        <div class="topic"><h5>Create your first playlist</h5></div>
+                        <div class="info">It's, easy we'll help you</div>
+                        <button class = "badge"> Create playlist</button>
+                </div>
+                <div class="box box2">
+                    <div class="topic"><h5>Let's find some podcasts to follow</h5></div>
+                    <div class="info">We'll keep you updated on new episodes</div>
+                    <button class = "badge"> Browse podcasts</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="content-panel">
+            <div class="navbar">
+                <div class="items">
+                    <div class="dir">
+                        <div class="nav1">
+                            <img src="./stock/backward_icon.png" >
+                        </div>
+                       <div class="nav1 hide">
+                            <img src="./stock/forward_icon.png">
+                       </div>
+                        
+                    </div>
+                    <div class="buttons">
+                        <button class = "nav-b badge hide"> Explore premium</button>
+                        <button class = "nav-b dark"> <i class="fa-regular fa-circle-down"></i>Install App</button>
+                        <button class = "nav-b bell"><i class="fa-regular fa-bell"></i></button>
+                        <button class = "nav-b A"> <i class="fa-solid fa-a"></i></button>
+                    </div>
+                </div>
+                <div class="tags">
+                    <div class="btn-group">
+                        <!-- Radio button 1 -->
+                        <input type="radio" id="btn1" name="buttons" checked>
+                        <label for="btn1" class="badge1">All</label>
+                
+                        <!-- Radio button 2 -->
+                        <input type="radio" id="btn2" name="buttons">
+                        <label for="btn2" class="badge1">Music</label>
+                
+                        <!-- Radio button 3 -->
+                        <input type="radio" id="btn3" name="buttons">
+                        <label for="btn3" class="badge1">Podcasts</label>
+                    </div>
+                </div>
+            </div>
+    <div class="cards">
+        <div class="Heading">Recently played</div>
+        <div class="container">
+            <div class="card">
+                <div class="pic">
+                    <img src="./stock/card7.jpeg" >
+                    <div class="play-button">
+                        <i class="fa fa-play"></i>
+                    </div>
+                </div>
+                    <p class = "title">i'm yours</p>
+                    <p class = "info">Isabel LaRosa</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cards">
+            <div class="Heading">Try Something Else</div>
+            <div class="container1">
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://i.scdn.co/image/ab67706f00000002fce19293d4fec046abb2ddf8">
+                        <div class="play-button">
+                            <i class="fa fa-play"></i>
+                        </div>
+                      
+                    </div>
+                    <div>
+                        <p class = "title">Hot Hits Hindi</p>
+                        <p class = "info">Hottest Hindi music is served here</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://i.scdn.co/image/ab67706f00000002efcd35fd64a73060bb6605e4">
+                        <div class="play-button">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class = "title">Bollywood Central</p>
+                        <p class = "info">Bollywood Central, jab baje toh seedha dil ke centre mein lage..</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://i.scdn.co/image/ab67706f00000002e93981469701adc33fa61b7f">
+                        <div class="play-button">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class = "title">Hot Hits Tamil</p>
+                        <p class = "info">Tune into the hottest tracks of the Kollywood! Cover:Leo</p>
+                    </div>
+                </div>
+           
+            <div class="card">
+                <div class="pic">
+                    <img src="  https://i.scdn.co/image/ab67706f00000002344bde7ee069f45b6da72653">
+                    <div class="play-button">
+                        <i class="fa fa-play"></i>
+                    </div>
+                </div>
+                <div>
+                    <p class = "title">Hot Hits Tamil</p>
+                    <p class = "info">Tune into the hottest tracks of the Kollywood! Cover:Leo</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pic">
+                    <img src="https://i.scdn.co/image/ab67706f000000021ca2911a6dd95e49bee08d40">
+                    <div class="play-button">
+                        <i class="fa fa-play"></i>
+                    </div>
+                </div>
+                <div>
+                    <p class = "title">Kollywood Cream</p>
+                    <p class = "info">Fineest collection of Tamil Music from past 10 years</p>
+                </div>
+            </div>
+        </div>
+        </div>
+            <div class="cards">
+                <div class="Heading">Songs for AVI8AAZ</div>
+                <div class="container1">
+                    <div class="card">
+                        <div class="pic">
+                            <img src="https://i.scdn.co/image/ab67616d00001e0255a54faa95f225f30a4c4e26">
+                            <div class="play-button">
+                                <i class="fa fa-play"></i>
+                            </div>
+                          
+                        </div>
+                        <div>
+                            <p class = "title">Hey Idi Nenena</p>
+                            <p class = "info">Thaman S, Sid Sriram</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pic">
+                            <img src="https://i.scdn.co/image/ab67616d00001e023bb92a17e961e391a5e16e64">
+                            <div class="play-button">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p class = "title">Bheeshma</p>
+                            <p class = "info">Mahati Swara Sagar</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pic">
+                            <img src="https://i.scdn.co/image/ab67616d00001e02b25186ce963e3c84b513f33d">
+                            <div class="play-button">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p class = "title">Maate Vinadhuga</p>
+                            <p class = "info">Sid Sriram</p>
+                        </div>
+                    </div>
+               
+                <div class="card">
+                    <div class="pic">
+                        <img src=" https://i.scdn.co/image/ab67616d00001e0234b868c8d485812aa5566043">
+                        <div class="play-button">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class = "title">Ammayi</p>
+                        <p class = "info">Raghav Chaitanya, Anantha Sreeram</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02f2f25586356c6fddee3da1dd">
+                        <div class="play-button">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class = "title">Telisiney Na Nuvvey</p>
+                        <p class = "info">L.V. Revanth</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://i.scdn.co/image/ab67616d00001e0241e31d6ea1d493dd77933ee5">
+                        <div class="play-button">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class = "title">Stay</p>
+                        <p class = "info"> Kid Laroi, Justin Bieber</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02d845dee6cbaf077dee755195">
+                        <div class="play-button">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class = "title">Adiga Adiga</p>
+                        <p class = "info">Sid Sriram</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02cc36bc60d9ce49e5f00fb382">
+                        <div class="play-button">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class = "title">Mahiye Jinna Sohna </p>
+                        <p class = "info">Darshan Raval</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://i.scdn.co/image/ab67616d00001e021ec87e81dc7d43482efdd71e">
+                        <div class="play-button">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class = "title">Wrath of Salaar</p>
+                        <p class = "info">Ravi Basrur</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://i.scdn.co/image/ab67616d00001e0252e3a807b72281cb40c08092">
+                        <div class="play-button">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class = "title">Akhiyaan Gulaab</p>
+                        <p class = "info">Mitraz</p>
+                    </div>
+                </div>
+
+        </div>
+  
+        </div>
+
+        <div class="cards">
+            <div class="Heading">Featured Charts</div>
+            <div class="container1">
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg">
+                        <div class="play-button">
+                            <i class="fa fa-play"></i>
+                        </div>
+                      
+                    </div>
+                    <div>
+                        <p class = "title">Top 50-India</p>
+                        <p class = "info">Your daily update of the most played tracks right now - India.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_in_default.jpg">
+                        <div class="play-button">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class = "title">Top Songs - India</p>
+                        <p class = "info">Your weekly update of the most played tracks right now - India.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg">
+                        <div class="play-button">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class = "title">Top 50 - Global</p>
+                        <p class = "info">Your daily update of the most played tracks right now - Global.</p>
+                    </div>
+                </div>
+           
+            <div class="card">
+                <div class="pic">
+                    <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_in_default.jpg">
+                    <div class="play-button">
+                        <i class="fa fa-play"></i>
+                    </div>
+                </div>
+                <div>
+                    <p class = "title">Viral 50 - India</p>
+                    <p class = "info">Your daily update of the most viral tracks right now - India.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pic">
+                    <img src="./stock/card5img.jpeg">
+                    <div class="play-button">
+                        <i class="fa fa-play"></i>
+                    </div>
+                </div>
+                <div>
+                    <p class = "title">Top Songs - Global</p>
+                    <p class = "info">Your weekly update of the most played tracks right now</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <br><br><br><br><br>
+    </div>
+        <div class="music-player">
+           <div class="logo">
+            <div class="pic">
+                <img src="./stock/card0.jpeg" >
+            </div>
+            <div class="names">
+                 <h5 class = "song">i'm yours</h5>
+                 <p class  = "artist">Isabel LaRosa</p>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+           </div>
+           <div class="player">
+            <div class="ctrls">
+                <img src="./stock/player_icon1.png" >
+                <img src="./stock/player_icon2.png" >
+                <img src="./stock/player_icon3.png" class = "play">
+                <img src="./stock/player_icon4.png" >
+                <img src="./stock/player_icon5.png" >
+            </div>
+            <div class="slider">
+                <span class ="current-time">0:00</span>
+                <input type="range" min="0" max="100" class = "playbackbar" step = "1">
+                <span class ="total-time">2:26</span>
+            </div>
+           </div>
+           <div class="controls">
+            <img class = "pic1" src="./stock/controls_icon1.png">
+            <img class = "pic2" src="./stock/controld_icon2.png">
+            <img class = "pic3"src="./stock/controls_icon3.png">
+            <img class = "pic4"src="./stock/controls_icon4.png">   
+            <img class = "pic5"src="./stock/controls_icon5.png">    
+            <input type="range" min="0" max="100" class = "volume" step = "1">
+           
+            <img class = "pic7"src="./stock/album_icon2.png">
+           </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
