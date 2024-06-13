@@ -2,7 +2,7 @@
 
 # Spotify UI Clone 🎵
 
-![Spotify UI Clone](/spotify.png)
+![Spotify UI Clone](spotify.png)
 
 A simple HTML and CSS clone of the Spotify user interface. This project replicates the look and feel of Spotify's web app, showcasing front-end design skills.
 
